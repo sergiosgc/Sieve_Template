@@ -1,0 +1,62 @@
+{
+    "name": "sergiosgc/sieve_template",
+    "description": "Sieve_Template is a templating engine on top of Sieve_Parser data structures",
+    "keywords": ["parser", "sieve"],
+    "type": "library",
+    "license": "GPLv3",
+    "homepage": "https://github.com/sergiosgc/Sieve_Template",
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "url": "https://github.com/sergiosgc/Sieve_Parser.git",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/sergiosgc/Text_Tokenizer.git",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/sergiosgc/Text_Tokenizer_Regex.git",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/sergiosgc/Text_Parser.git",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/sergiosgc/Text_Parser_BNF.git",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/sergiosgc/Text_Parser_Generator.git",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/sergiosgc/Structures_Grammar.git",
+            "type": "git"
+        }
+    ],
+    "authors":
+    [
+        {
+            "name": "Sérgio Carvalho",
+            "homepage": "https://github.com/sergiosgc"
+        }
+    ],
+    "require-dev":
+    {
+        "phpunit/phpunit": "^7"
+    },
+    "require":
+    {
+        "php": ">=7.0.0",
+        "sergiosgc/Sieve_Parser": "dev-master"
+    },
+    "autoload":
+    {
+        "psr-4":
+        {
+            "sergiosgc\\Sieve_Parser\\": [ "lib/" ]
+        }
+    }
+}
